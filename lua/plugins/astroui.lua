@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroUI provides the basis for configuring the AstroNvim User Interface
 -- Configuration documentation can be found with `:h astroui`
@@ -11,7 +11,10 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "astrodark",
+    -- colorscheme = "astrodark",
+    -- colorscheme = "catppuccin",
+    colorscheme = "sonokai",
+
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes
@@ -35,5 +38,11 @@ return {
       LSPLoading9 = "⠇",
       LSPLoading10 = "⠏",
     },
+  },
+  {
+    "sainnhe/sonokai",
+    init = function() -- init function runs before the plugin is loaded
+      vim.g.sonokai_style = "shusia"
+    end,
   },
 }
