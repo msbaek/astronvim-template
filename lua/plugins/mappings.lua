@@ -22,12 +22,16 @@ return {
           ["<Leader>b"] = { name = "Buffers" },
           -- quick save
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+          -- ["<C-s>"] = { "<cmd>w!<cr>", desc = "force save" },
           ["<Tab>"] = { "<cmd>bn<cr>", desc = "Next tab" },
           ["<S-Tab>"] = { "<cmd>bp<cr>", desc = "Previous Tab" },
           ["<leader>a"] = { "ggVG", desc = "select all" },
           ["<leader>-"] = { "<cmd>split<cr>", desc = "vsplit" },
           ["<leader>|"] = { "<cmd>vsplit<cr>", desc = "split" },
-          ["<C-s>"] = { "<cmd>w!<cr>", desc = "force save" },
+          -- ["<C-k>"] = { ":wincmd k<CR>", desc = "Move to window above" },
+          -- ["<C-j>"] = { ":wincmd j<CR>", desc = "Move to window below" },
+          -- ["<C-h>"] = { ":wincmd h<CR>", desc = "Move to window right" },
+          -- ["<C-l>"] = { ":wincmd l<CR>", desc = "Move to window left" },
           -- map("n", "<leader>fs", "<cmd>set ft=sql<cr>")
           -- map("n", "<leader>fd", "<cmd>set ft=markdown<cr>")
           -- map("n", "<leader>fj", "<cmd>set ft=java<cr>")
